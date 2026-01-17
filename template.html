@@ -3,28 +3,32 @@
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='strm.xml' b:templateVersion='1.0.1' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
-    <title><data:view.title.escaped/></title>
+    <meta content='ACropx - Professional App Developer' name='author'/>
+    <meta content='Discover amazing Android apps and games by ACropx. Download the best apps from our Play Store showcase.' name='description'/>
+    <title><data:view.title.escaped/> | ACropx Apps</title>
     <b:include data='blog' name='all-head-content'/>
+    <link href='https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap' rel='stylesheet'/>
 
     <b:skin version='1.0.1'><![CDATA[/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 /*
-<!-- Constants -->
+<!-- ACropx Play Store Theme Constants -->
 
-<Variable name="damionRegular36" description="Damion Regular 36" type="font" default="400 36px Damion, cursive" hideEditor="true"  value="400 36px Damion, cursive"/>
-<Variable name="damionRegular62" description="Damion Regular 62" type="font" default="400 62px Damion, cursive" hideEditor="true"  value="400 62px Damion, cursive"/>
-<Variable name="playfairDisplayBlack28" description="Playfair Display Black 28" type="font" default="900 28px Playfair Display, serif" hideEditor="true"  value="900 28px Playfair Display, serif"/>
-<Variable name="playfairDisplayBlack36" description="Playfair Display Black 36" type="font" default="900 36px Playfair Display, serif" hideEditor="true"  value="900 36px Playfair Display, serif"/>
-<Variable name="playfairDisplayBlack44" description="Playfair Display Black 44" type="font" default="900 44px Playfair Display, serif" hideEditor="true"  value="900 44px Playfair Display, serif"/>
+<Variable name="googleSans400_24" description="Google Sans Regular 24" type="font" default="400 24px Google Sans, Roboto, sans-serif" hideEditor="true"  value="400 24px Google Sans, Roboto, sans-serif"/>
+<Variable name="googleSans500_28" description="Google Sans Medium 28" type="font" default="500 28px Google Sans, Roboto, sans-serif" hideEditor="true"  value="500 28px Google Sans, Roboto, sans-serif"/>
+<Variable name="googleSans700_32" description="Google Sans Bold 32" type="font" default="700 32px Google Sans, Roboto, sans-serif" hideEditor="true"  value="700 32px Google Sans, Roboto, sans-serif"/>
+<Variable name="googleSans700_42" description="Google Sans Bold 42" type="font" default="700 42px Google Sans, Roboto, sans-serif" hideEditor="true"  value="700 42px Google Sans, Roboto, sans-serif"/>
+<Variable name="robotoNormal14" description="Roboto Normal 14" type="font" default="14px Roboto, sans-serif" hideEditor="true"  value="14px Roboto, sans-serif"/>
 <Variable name="robotoNormal15" description="Roboto Normal 15" type="font" default="15px Roboto, sans-serif" hideEditor="true"  value="15px Roboto, sans-serif"/>
 <Variable name="robotoNormal16" description="Roboto Normal 16" type="font" default="16px Roboto, sans-serif" hideEditor="true"  value="16px Roboto, sans-serif"/>
-<Variable name="robotoLightItalic15" description="Roboto Light Italic 15" type="font" default="italic 300 15px Roboto, sans-serif" hideEditor="true"  value="italic 300 15px Roboto, sans-serif"/>
-<Variable name="robotoBold22" description="Roboto Bold 22" type="font" default="bold 22px Roboto, sans-serif" hideEditor="true"  value="bold 22px Roboto, sans-serif"/>
-<Variable name="robotoBold30" description="Roboto Bold 30" type="font" default="bold 30px Roboto, sans-serif" hideEditor="true"  value="bold 30px Roboto, sans-serif"/>
-<Variable name="robotoBold45" description="Roboto Bold 45" type="font" default="bold 45px Roboto, sans-serif" hideEditor="true"  value="bold 45px Roboto, sans-serif"/>
+<Variable name="robotoMedium14" description="Roboto Medium 14" type="font" default="500 14px Roboto, sans-serif" hideEditor="true"  value="500 14px Roboto, sans-serif"/>
+<Variable name="robotoMedium16" description="Roboto Medium 16" type="font" default="500 16px Roboto, sans-serif" hideEditor="true"  value="500 16px Roboto, sans-serif"/>
+<Variable name="robotoBold20" description="Roboto Bold 20" type="font" default="bold 20px Roboto, sans-serif" hideEditor="true"  value="bold 20px Roboto, sans-serif"/>
+<Variable name="robotoBold24" description="Roboto Bold 24" type="font" default="bold 24px Roboto, sans-serif" hideEditor="true"  value="bold 24px Roboto, sans-serif"/>
 
-<!-- Variable definitions -->
+<!-- Variable definitions - Play Store Color Palette -->
 
-<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#2196f3"/>
+<Variable name="keycolor" description="Main Color (Play Store Green)" type="color" default="#01875f"  value="#01875f"/>
+<Variable name="accentcolor" description="Accent Color" type="color" default="#1a73e8"  value="#1a73e8"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
@@ -34,7 +38,7 @@
       default="$(robotoNormal15)"  value="15px Roboto, sans-serif"/>
   <Variable name="body.text.color" description="Color"
       type="color"
-      default="#757575"  value="#757575"/>
+      default="#5f6368"  value="#5f6368"/>
 </Group>
 
 <Group description="Backgrounds">
@@ -42,17 +46,17 @@
       type="length"
       min="420px"
       max="640px"
-      default="480px"  value="480px"/>
+      default="300px"  value="300px"/>
   <Variable name="body.background" description="Background"
       color="$(body.background.color)"
       type="background"
       default="$(color) none repeat scroll top left"  value="$(color) none repeat scroll top left"/>
   <Variable name="body.background.shadow" description="Background overlay shadow"
       type="color"
-      default="rgba(0,0,0,.26)"  value="rgba(0, 0, 0 ,0)"/>
+      default="rgba(0,0,0,.1)"  value="rgba(0, 0, 0, 0.05)"/>
   <Variable name="body.background.color" description="Body background color"
       type="color"
-      default="#eee"  value="#f4f4f4"/>
+      default="#f8f9fa"  value="#f8f9fa"/>
   <Variable name="posts.background.color" description="Post background color"
       type="color"
       default="#fff"  value="#ffffff"/>
@@ -66,95 +70,95 @@
 <Group description="Links">
   <Variable name="body.link.color" description="Link color"
       type="color"
-      default="#2196f3"  value="#2196f3"/>
+      default="#1a73e8"  value="#1a73e8"/>
   <Variable name="body.link.visited.color" description="Visited link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a73e8"/>
   <Variable name="body.link.hover.color" description="Link Hover Color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="#174ea6"  value="#174ea6"/>
 </Group>
 
 <Group description="Blog title" selector="div.widget.Header">
   <Variable name="blog.title.font" description="Font"
       type="font"
-      default="$(robotoBold45)"  value="italic bold 45px Roboto, sans-serif"/>
+      default="$(googleSans700_32)"  value="700 32px Google Sans, Roboto, sans-serif"/>
   <Variable name="blog.title.color" description="Color"
       type="color"
-      default="#fff"  value="#424242"/>
+      default="#202124"  value="#202124"/>
   <Variable name="header.icons.color"
       description="Background icons color"
       type="color"
-      default="#fff"  value="#424242"/>
+      default="#5f6368"  value="#5f6368"/>
 </Group>
 
 <Group description="Tabs text" selector="div.widget.PageList">
   <Variable name="tabs.font" description="Font"
       type="font"
-      family="$(robotoNormal15.family)"
-      size="$(robotoNormal15.size)"
-      default="700 normal $(size) $(family)"  value="700 normal $(size) $(family)"/>
+      family="$(robotoMedium14.family)"
+      size="$(robotoMedium14.size)"
+      default="500 normal $(size) $(family)"  value="500 normal 14px Roboto, sans-serif"/>
   <Variable name="tabs.color" description="Text color"
       type="color"
-      default="#ccc"  value="#757575"/>
+      default="#5f6368"  value="#5f6368"/>
   <Variable name="tabs.selected.color" description="Selected color"
       type="color"
-      default="#fff"  value="#424242"/>
+      default="#01875f"  value="#01875f"/>
   <Variable name="tabs.overflow.background.color" description="Popup background color"
       type="color"
       default="$(posts.background.color)"  value="#ffffff"/>
   <Variable name="tabs.overflow.color" description="Popup text color"
       type="color"
-      default="$(posts.text.color)"  value="#757575"/>
+      default="$(posts.text.color)"  value="#5f6368"/>
   <Variable name="tabs.overflow.selected.color" description="Popup selected color"
       type="color"
-      default="$(posts.title.color)"  value="#424242"/>
+      default="$(posts.title.color)"  value="#202124"/>
 </Group>
 
 <Group description="Posts" selector="div.widget.Blog">
   <Variable name="posts.title.color" description="Post title color"
       type="color"
-      default="#424242"  value="#424242"/>
+      default="#202124"  value="#202124"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
-      default="$(robotoBold22)"  value="bold 22px Roboto, sans-serif"/>
+      default="$(robotoBold20)"  value="bold 20px Roboto, sans-serif"/>
   <Variable name="posts.stream.title.font" description="Post title stream font"
       type="font"
-      default="$(robotoBold30)"  value="bold 30px Roboto, sans-serif"/>
+      default="$(robotoBold24)"  value="bold 24px Roboto, sans-serif"/>
   <Variable name="posts.text.font" description="Post text font"
       type="font"
       default="$(body.text.font)"  value="15px Roboto, sans-serif"/>
   <Variable name="posts.text.color" description="Post text color"
       type="color"
-      default="$(body.text.color)"  value="#757575"/>
+      default="$(body.text.color)"  value="#5f6368"/>
   <Variable name="posts.byline.color" description="Post byline color"
       type="color"
-      default="rgba(0, 0, 0, 0.54)"  value="rgba(0, 0, 0, 0.54)"/>
+      default="#80868b"  value="#80868b"/>
   <Variable name="blockquote.font" description="Blockquote font"
       type="font"
-      default="$(robotoLightItalic15)"  value="italic 300 15px Roboto, sans-serif"/>
+      default="italic 300 15px Roboto, sans-serif"  value="italic 300 15px Roboto, sans-serif"/>
   <Variable name="blockquote.color" description="Blockquote color"
       type="color"
-      default="#444"  value="#444444"/>
+      default="#5f6368"  value="#5f6368"/>
   <Variable name="posts.icons.color"
       description="Post icons color"
       type="color"
-      default="#707070"  value="#707070"/>
+      default="#5f6368"  value="#5f6368"/>
   <Variable name="posts.boxshadow.color" description="Post box shadow color"
       type="color"
-      default="rgba(0, 0, 0, 0)"  value="rgba(60, 64, 67, 0.30)"/>
+      default="rgba(60, 64, 67, 0.15)"  value="rgba(60, 64, 67, 0.15)"/>
 </Group>
 
 <Group description="Search">
   <Variable name="search.input.color" description="Input color"
       type="color"
-      default="$(blog.title.color)"  value="#424242"/>
+      default="#202124"  value="#202124"/>
   <Variable name="search.input.font" description="Input font"
       type="font"
       default="$(robotoNormal16)"  value="16px Roboto, sans-serif"/>
   <Variable name="search.placeholder.color" description="Placeholder text color"
       type="color"
-      default="$(blog.title.color)"  value="#424242"/>
+      default="#5f6368"  value="#5f6368"/>
 </Group>
 
 <Group description="Sharing">
@@ -164,56 +168,56 @@
       default="$(posts.background.color)"  value="#ffffff"/>
   <Variable name="sharing.text.color" description="Sharing text color"
       type="color"
-      default="$(posts.title.color)"  value="#424242"/>
+      default="$(posts.title.color)"  value="#202124"/>
   <Variable name="sharing.icons.color"
       description="Sharing icons color"
       type="color"
-      default="$(sharing.text.color)"  value="#424242"/>
+      default="$(sharing.text.color)"  value="#202124"/>
 </Group>
 
 <Group description="Popular posts" selector="div.widget.PopularPosts">
   <Variable name="popularposts.background.color"
       description="Popular post background color"
       type="color"
-      default="$(body.background.color)"  value="#f4f4f4"/>
+      default="$(body.background.color)"  value="#f8f9fa"/>
   <Variable name="popularposts.byline.color"
       description="Popular post byline color"
       type="color"
-      default="$(posts.byline.color)"  value="rgba(0, 0, 0, 0.54)"/>
+      default="$(posts.byline.color)"  value="#80868b"/>
   <Variable name="popularposts.title.color"
       description="Popular post title color"
       type="color"
-      default="$(posts.title.color)"  value="#424242"/>
+      default="$(posts.title.color)"  value="#202124"/>
   <Variable name="popularposts.text.color"
       description="Popular post text color"
       type="color"
-      default="$(posts.text.color)"  value="#757575"/>
+      default="$(posts.text.color)"  value="#5f6368"/>
   <Variable name="popularposts.link.color"
       description="Popular post link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a73e8"/>
 </Group>
 
 <Group description="Post navigation" selector='div.blog-pager'>
   <Variable name="posts.navigation.link.color"
       description="Post navigation links color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="#01875f"  value="#01875f"/>
   <Variable name="posts.navigation.link.visited.color"
       description="Post navigation links visited color"
       type="color"
-      default="$(body.link.visited.color)"  value="#2196f3"/>
+      default="$(body.link.visited.color)"  value="#1a73e8"/>
   <Variable name="posts.navigation.link.hover.color"
       description="Post navigations links hover color"
       type="color"
-      default="$(body.link.hover.color)"  value="#2196f3"/>
+      default="#017a56"  value="#017a56"/>
 </Group>
 
 <Group description="Sidebar" selector="div.sidebar-container">
   <Variable name="sidebar.backgroundColorTop"
       description="Background color (Top)"
       type="color"
-      default="#f7f7f7"  value="#f7f7f7"/>
+      default="#ffffff"  value="#ffffff"/>
   <Variable name="sidebar.backgroundColorTopHD"
       description="Background color (Top) - HD"
       type="color"
@@ -225,74 +229,104 @@
   <Variable name="sidebar.separator.color"
       description="Separator color"
       type="color"
-      default="#ccc"  value="#cccccc"/>
+      default="#e8eaed"  value="#e8eaed"/>
   <Variable name="widget.title.color"
       description="Gadget title color"
       type="color"
-      default="#424242"  value="#424242"/>
+      default="#202124"  value="#202124"/>
   <Variable name="sidebar.icons.color"
       description="Sidebar icons color"
       type="color"
-      default="#707070"  value="#707070"/>
+      default="#5f6368"  value="#5f6368"/>
 </Group>
 
 <Group description="Author profile" selector='.widget.Profile'>
   <Variable name="profile.title.color" description="Profile title color"
       type="color"
-      default="rgba(0,0,0,0.52)"  value="rgba(0,0,0,0.52)"/>
+      default="#202124"  value="#202124"/>
   <Variable name="profile.text.color" description="Profile text color"
       type="color"
-      default="rgba(0, 0, 0, 0.54)"  value="rgba(0, 0, 0, 0.54)"/>
+      default="#5f6368"  value="#5f6368"/>
   <Variable name="profile.link.color" description="Profile link color"
       type="color"
-      default="$(posts.title.color)"  value="#424242"/>
+      default="$(posts.title.color)"  value="#202124"/>
 </Group>
 
 <Group description="Labels" selector=".widget.Label">
   <Variable name="labels.text.color"
       description="Label text color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="#01875f"  value="#01875f"/>
   <Variable name="labels.background.color"
       description="Label background color"
       type="color"
       red="$(labels.text.color.red)"
       green="$(labels.text.color.green)"
       blue="$(labels.text.color.blue)"
-      default="rgba($red, $green, $blue, 0.05)"  value="#f7f7f7"/>
+      default="rgba($red, $green, $blue, 0.08)"  value="rgba(1, 135, 95, 0.08)"/>
 </Group>
 
 <Group description="Attribution" selector=".widget.Attribution">
   <Variable name="attribution.text.color" description="Attribution text color"
       type="color"
-      default="$(body.text.color)"  value="#757575"/>
+      default="$(body.text.color)"  value="#5f6368"/>
   <Variable name="attribution.link.color" description="Attribution link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a73e8"/>
   <Variable name="attribution.icon.color" description="Attribution icon color"
       type="color"
-      default="#707070"
-      hideEditor="true"  value="#707070"/>
+      default="#5f6368"
+      hideEditor="true"  value="#5f6368"/>
 </Group>
 
 <Group description="Widths">
   <Variable name="sidebar.width" description="Sidebar width" type="length"
-            min="100px" max="1000px" default="284px"  value="284px"/>
+            min="100px" max="1000px" default="300px"  value="300px"/>
   <Variable name="content.width" description="Content width" type="length"
-            min="600px" max="2400px" default="922px"  value="922px"/>
+            min="600px" max="2400px" default="1200px"  value="1200px"/>
   <Variable name="content.margin" description="Content margin" type="length"
-            min="0px" max="1000px" default="117px"  value="117px"/>
+            min="0px" max="1000px" default="80px"  value="80px"/>
 </Group>
 */
 
 /*!************************************************
- * Blogger Template Style
- * Name: Essential
+ * ACropx Play Store Showcase Theme
+ * Developer: ACropx
+ * A modern, professional Blogger theme for 
+ * Play Store app showcase websites
  **************************************************/
+
+/* Root Variables for Easy Customization */
+:root {
+  --playstore-green: #01875f;
+  --playstore-green-hover: #017a56;
+  --playstore-blue: #1a73e8;
+  --playstore-blue-hover: #174ea6;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --text-tertiary: #80868b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --border-color: #e8eaed;
+  --shadow-light: 0 1px 3px rgba(60,64,67,0.1);
+  --shadow-medium: 0 2px 6px rgba(60,64,67,0.15);
+  --shadow-heavy: 0 4px 12px rgba(60,64,67,0.2);
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-xl: 24px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
 body{
 overflow-wrap:break-word;
 word-break:break-word;
-word-wrap:break-word
+word-wrap:break-word;
+font-family: 'Roboto', 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+background-color: var(--bg-secondary);
+color: var(--text-secondary);
+line-height: 1.6
 }
 .hidden{
 display:none
@@ -2534,6 +2568,344 @@ body.collapsed-header.item-view .centered-top-container .blog-name{
 margin-left:40px
 }
 }
+
+/* ============================================
+   ACropx Play Store Showcase - Custom Styles
+   ============================================ */
+
+/* Developer Branding Header */
+.acropx-dev-header {
+  background: linear-gradient(135deg, #01875f 0%, #00a86b 100%);
+  padding: 8px 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.acropx-dev-header .developer-name {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Enhanced Card Styling for App Posts */
+#page_body .FeaturedPost,.Blog .blog-posts .post-outer-container{
+  background: var(--bg-primary);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-light);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.Blog .blog-posts .post-outer-container:hover {
+  box-shadow: var(--shadow-heavy);
+  transform: translateY(-2px);
+}
+
+/* App-style Post Title */
+.post-title, .post-title a {
+  color: var(--text-primary) !important;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  transition: color var(--transition-fast);
+}
+
+.post-title a:hover {
+  color: var(--playstore-green) !important;
+}
+
+/* App Thumbnail Styling */
+.snippet-thumbnail {
+  border-radius: var(--radius-small);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.snippet-thumbnail img {
+  border-radius: var(--radius-small);
+  transition: transform var(--transition-normal);
+}
+
+.snippet-thumbnail:hover img {
+  transform: scale(1.02);
+}
+
+/* Play Store Install Button Style */
+.jump-link a {
+  background: var(--playstore-green);
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: var(--radius-small);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 0.25px;
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+  display: inline-block;
+}
+
+.jump-link a:hover {
+  background: var(--playstore-green-hover);
+  box-shadow: var(--shadow-medium);
+  color: #fff !important;
+}
+
+/* Category/Label Pills */
+.post-labels a, .Label li a {
+  background: rgba(1, 135, 95, 0.08);
+  color: var(--playstore-green);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 4px 4px 0;
+  display: inline-block;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.post-labels a:hover, .Label li a:hover {
+  background: var(--playstore-green);
+  color: #fff;
+}
+
+/* Star Rating Style Elements */
+.post-timestamp {
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.post-timestamp:before {
+  content: "📱 ";
+}
+
+/* Enhanced Header */
+.Header h1 {
+  font-family: 'Google Sans', 'Roboto', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+}
+
+.Header h1:after {
+  content: " Apps";
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Search Box Play Store Style */
+.search form {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.search form:focus-within {
+  border-color: var(--playstore-green);
+  box-shadow: 0 1px 6px rgba(1, 135, 95, 0.2);
+}
+
+.search-input input {
+  background: transparent;
+  border: none;
+}
+
+/* Navigation Tabs Play Store Style */
+.tabs li a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: none;
+  padding: 12px 16px;
+  border-radius: var(--radius-small);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.tabs li a:hover {
+  background: rgba(1, 135, 95, 0.08);
+  color: var(--playstore-green);
+}
+
+.tabs .selected {
+  border-bottom-color: var(--playstore-green);
+}
+
+.tabs .selected a {
+  color: var(--playstore-green);
+}
+
+/* Popular Posts as Featured Apps */
+.PopularPosts .post {
+  background: var(--bg-primary);
+  border-radius: var(--radius-medium);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow-light);
+  transition: box-shadow var(--transition-normal);
+}
+
+.PopularPosts .post:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.PopularPosts .item-thumbnail img {
+  border-radius: var(--radius-medium);
+}
+
+.PopularPosts .post-title a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Sidebar Enhancement */
+.sidebar-container {
+  background: var(--bg-primary);
+  border-radius: 0;
+  box-shadow: var(--shadow-light);
+}
+
+.sidebar-container .widget {
+  padding: 20px 16px;
+}
+
+.sidebar-container .widget .title {
+  color: var(--text-primary);
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* Footer Attribution */
+.Attribution {
+  background: var(--bg-primary);
+  padding: 24px;
+  border-radius: var(--radius-medium);
+  margin-top: 24px;
+}
+
+.Attribution:before {
+  content: "Developed by ACropx • ";
+  font-weight: 500;
+  color: var(--playstore-green);
+}
+
+/* Comment Section Enhancement */
+#comments {
+  background: var(--bg-primary);
+  border-radius: var(--radius-medium);
+  padding: 24px;
+  margin-top: 24px;
+  border: none;
+  box-shadow: var(--shadow-light);
+}
+
+#comments .title {
+  color: var(--text-primary);
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+#comments .comment {
+  border-left: 3px solid var(--playstore-green);
+  padding-left: 16px;
+}
+
+/* Blog Pager Navigation */
+.blog-pager a {
+  background: var(--playstore-green);
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: var(--radius-small);
+  font-weight: 500;
+  transition: background var(--transition-fast);
+}
+
+.blog-pager a:hover {
+  background: var(--playstore-green-hover);
+}
+
+/* Share Buttons */
+.share-buttons {
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-heavy);
+}
+
+.share-buttons li .sharing-platform-button:hover {
+  background: rgba(1, 135, 95, 0.08);
+}
+
+/* Responsive App Grid */
+@media screen and (min-width: 801px) {
+  .Blog .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+  }
+  
+  .Blog .blog-posts .post-outer-container {
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile Optimizations */
+@media screen and (max-width: 800px) {
+  .Blog .blog-posts .post-outer-container {
+    border-radius: var(--radius-small);
+    margin: 8px;
+  }
+  
+  .jump-link a {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  
+  .post-title {
+    font-size: 16px;
+  }
+}
+
+/* Animation for Loading */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-outer-container {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.post-outer-container:nth-child(1) { animation-delay: 0.1s; }
+.post-outer-container:nth-child(2) { animation-delay: 0.2s; }
+.post-outer-container:nth-child(3) { animation-delay: 0.3s; }
+.post-outer-container:nth-child(4) { animation-delay: 0.4s; }
+.post-outer-container:nth-child(5) { animation-delay: 0.5s; }
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1f1f1f;
+    --bg-secondary: #121212;
+    --text-primary: #e8eaed;
+    --text-secondary: #9aa0a6;
+    --text-tertiary: #80868b;
+    --border-color: #3c4043;
+    --shadow-light: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-medium: 0 2px 6px rgba(0,0,0,0.4);
+    --shadow-heavy: 0 4px 12px rgba(0,0,0,0.5);
+  }
+}
 ]]></b:skin>
 
     <b:template-skin>
@@ -2848,6 +3220,13 @@ margin-left:40px
     <b:class cond='data:view.isLabelSearch' name='label-view'/>
     <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
     <b:class cond='data:widgets none w =&gt; (w.sectionId in [&quot;sidebar_top&quot;, &quot;sidebar_bottom&quot;])' name='no-sidebar-widget'/>
+
+    <!-- ACropx Developer Branding Header -->
+    <div class='acropx-dev-header' style='background: linear-gradient(135deg, #01875f 0%, #00a86b 100%); padding: 10px 16px; text-align: center; color: #fff;'>
+      <span style='font-size: 13px; font-weight: 500; letter-spacing: 0.3px;'>
+        🚀 Apps by <span style='font-weight: 700;'>ACropx</span> | Discover &amp; Download Quality Android Apps
+      </span>
+    </div>
 
     <b:include name='skipNavigation'/>
 
@@ -4408,6 +4787,42 @@ margin-left:40px
       </div>
       <b:section class='sidebar_bottom' id='sidebar_bottom' name='Sidebar (Bottom)' preferred='yes'/>
     </aside>
+
+    <!-- ACropx Professional Footer -->
+    <footer class='acropx-footer' style='background: linear-gradient(135deg, #1f1f1f 0%, #2d2d2d 100%); color: #e8eaed; padding: 40px 24px 24px; text-align: center; margin-top: 40px;'>
+      <div style='max-width: 1200px; margin: 0 auto;'>
+        <!-- Developer Logo/Branding -->
+        <div style='margin-bottom: 24px;'>
+          <span style='font-family: Google Sans, Roboto, sans-serif; font-size: 28px; font-weight: 700; color: #01875f;'>ACropx</span>
+          <span style='display: block; font-size: 14px; color: #9aa0a6; margin-top: 4px;'>Android App Developer</span>
+        </div>
+        
+        <!-- Description -->
+        <p style='font-size: 14px; color: #9aa0a6; max-width: 500px; margin: 0 auto 24px; line-height: 1.6;'>
+          Crafting quality Android applications with passion. Download our apps from Google Play Store and explore a world of useful tools and entertainment.
+        </p>
+        
+        <!-- Social/CTA Links - Customize these URLs in Blogger Layout -->
+        <div style='margin-bottom: 24px;'>
+          <a expr:href='data:blog.homepageUrl' style='display: inline-block; background: #01875f; color: #fff; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; margin: 4px;' title='View all apps'>📱 View All Apps</a>
+          <a expr:href='&quot;mailto:contact@&quot; + data:blog.title.escaped + &quot;.com&quot;' style='display: inline-block; background: transparent; color: #01875f; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; border: 1px solid #01875f; margin: 4px;' title='Contact developer'>📧 Contact Developer</a>
+        </div>
+        
+        <!-- Divider -->
+        <div style='border-top: 1px solid #3c4043; margin: 24px 0; max-width: 400px; margin-left: auto; margin-right: auto;'/>
+        
+        <!-- Copyright -->
+        <div style='font-size: 12px; color: #80868b;'>
+          <p style='margin: 0 0 8px;'>© 2024 ACropx. All Rights Reserved.</p>
+          <p style='margin: 0;'>
+            <!-- Note: Add your policy page URLs in Blogger Pages section -->
+            <a expr:href='data:blog.homepageUrl + &quot;p/privacy-policy.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Privacy Policy'>Privacy Policy</a> |
+            <a expr:href='data:blog.homepageUrl + &quot;p/terms-of-service.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Terms of Service'>Terms of Service</a> |
+            <a expr:href='data:blog.homepageUrl + &quot;p/about.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='About'>About</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <b:template-script async='true' name='strm' version='1.0.0'/>
   </body>
