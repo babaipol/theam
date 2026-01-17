@@ -328,6 +328,191 @@ background-color: var(--bg-secondary);
 color: var(--text-secondary);
 line-height: 1.6
 }
+.acropx-dev-header{
+  background: linear-gradient(135deg, #01875f 0%, #00a86b 100%);
+  color:#fff;
+  text-align:center;
+  padding:10px 16px;
+  font-size:13px;
+  font-weight:500;
+  letter-spacing:0.3px;
+  box-shadow: var(--shadow-light)
+}
+.acropx-dev-header strong{
+  font-weight:700
+}
+.acropx-hero{
+  background: linear-gradient(135deg, #0b172a 0%, #112843 50%, #0b4436 100%);
+  color:#e8eaed;
+  padding:40px 24px
+}
+.acropx-hero__inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:24px;
+  flex-wrap:wrap
+}
+.acropx-hero__text{
+  flex:1 1 520px
+}
+.acropx-hero__eyebrow{
+  display:inline-block;
+  padding:6px 12px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:var(--radius-large);
+  font-weight:600;
+  letter-spacing:0.4px;
+  margin-bottom:12px;
+  text-transform:uppercase;
+  font-size:12px
+}
+.acropx-hero__title{
+  margin:0 0 12px;
+  color:#fff;
+  font-size:32px;
+  font-weight:700
+}
+.acropx-hero__subtitle{
+  margin:0 0 20px;
+  color:#cfd3dc;
+  max-width:620px
+}
+.acropx-hero__actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px
+}
+.acropx-hero__badge{
+  flex:0 0 auto;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.14);
+  padding:16px 20px;
+  border-radius:var(--radius-large);
+  color:#d7dadc;
+  min-width:220px;
+  box-shadow:var(--shadow-light)
+}
+.acropx-hero__badge span{
+  display:block;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.4px;
+  color:#9aa0a6
+}
+.acropx-hero__badge strong{
+  display:block;
+  color:#fff;
+  font-size:18px;
+  margin-top:6px
+}
+.acropx-button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 20px;
+  border-radius:var(--radius-medium);
+  font-weight:600;
+  text-decoration:none;
+  transition:transform var(--transition-fast),box-shadow var(--transition-fast),background var(--transition-fast),color var(--transition-fast);
+  letter-spacing:0.2px
+}
+.acropx-button.primary{
+  background:var(--playstore-green);
+  color:#fff;
+  box-shadow:var(--shadow-medium)
+}
+.acropx-button.primary:hover{
+  background:var(--playstore-green-hover);
+  transform:translateY(-1px)
+}
+.acropx-button.ghost{
+  border:1px solid rgba(255,255,255,0.35);
+  color:#e8eaed
+}
+.acropx-button.ghost:hover{
+  border-color:#fff;
+  color:#fff;
+  transform:translateY(-1px)
+}
+.acropx-footer{
+  background: linear-gradient(135deg, #1f1f1f 0%, #2d2d2d 100%);
+  color:#e8eaed;
+  padding:48px 24px 32px;
+  text-align:center;
+  margin-top:40px
+}
+.acropx-footer__inner{
+  max-width:1200px;
+  margin:0 auto
+}
+.acropx-footer__brand{
+  margin-bottom:20px
+}
+.acropx-logo{
+  font-family:'Google Sans', Roboto, sans-serif;
+  font-size:30px;
+  font-weight:700;
+  color:var(--playstore-green)
+}
+.acropx-tagline{
+  display:block;
+  font-size:14px;
+  color:#9aa0a6;
+  margin-top:6px
+}
+.acropx-footer__description{
+  font-size:14px;
+  color:#9aa0a6;
+  max-width:520px;
+  margin:16px auto 28px;
+  line-height:1.6
+}
+.acropx-footer__actions{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:24px
+}
+.acropx-footer__divider{
+  border-top:1px solid #3c4043;
+  max-width:420px;
+  margin:0 auto 20px
+}
+.acropx-footer__meta{
+  color:#80868b;
+  font-size:12px
+}
+.acropx-footer__copy{
+  margin:0 0 8px
+}
+.acropx-footer__links{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap
+}
+.acropx-footer__links a{
+  color:#9aa0a6;
+  text-decoration:none
+}
+.acropx-footer__links a:hover{
+  color:#e8eaed
+}
+@media screen and (max-width:640px){
+  .acropx-hero{
+    padding:28px 18px
+  }
+  .acropx-hero__title{
+    font-size:26px
+  }
+  .acropx-hero__badge{
+    width:100%
+  }
+}
 .hidden{
 display:none
 }
@@ -3222,13 +3407,29 @@ margin-left:40px
     <b:class cond='data:widgets none w =&gt; (w.sectionId in [&quot;sidebar_top&quot;, &quot;sidebar_bottom&quot;])' name='no-sidebar-widget'/>
 
     <!-- ACropx Developer Branding Header -->
-    <div class='acropx-dev-header' style='background: linear-gradient(135deg, #01875f 0%, #00a86b 100%); padding: 10px 16px; text-align: center; color: #fff;'>
-      <span style='font-size: 13px; font-weight: 500; letter-spacing: 0.3px;'>
-        🚀 Apps by <span style='font-weight: 700;'>ACropx</span> | Discover &amp; Download Quality Android Apps
-      </span>
+    <div class='acropx-dev-header'>
+      <span>🚀 Apps by <strong>ACropx</strong> | Discover &amp; Download Quality Android Apps</span>
     </div>
 
     <b:include name='skipNavigation'/>
+
+    <div class='acropx-hero'>
+      <div class='acropx-hero__inner'>
+        <div class='acropx-hero__text'>
+          <span class='acropx-hero__eyebrow'>Featured Android experiences</span>
+          <h1 class='acropx-hero__title'><data:blog.title/> by ACropx</h1>
+          <p class='acropx-hero__subtitle'>Modern, Play Store-ready apps crafted with a focus on polish, performance, and user delight.</p>
+          <div class='acropx-hero__actions'>
+            <a class='acropx-button primary' expr:href='data:blog.homepageUrl'>Browse our apps</a>
+            <a class='acropx-button ghost' expr:href='&quot;mailto:contact@&quot; + data:blog.title.escaped + &quot;.com&quot;'>Get in touch</a>
+          </div>
+        </div>
+        <div class='acropx-hero__badge'>
+          <span>Professional quality</span>
+          <strong>Play Store Ready</strong>
+        </div>
+      </div>
+    </div>
 
     <div class='page'>
       <div class='bg-photo-overlay'/>
@@ -4789,37 +4990,27 @@ margin-left:40px
     </aside>
 
     <!-- ACropx Professional Footer -->
-    <footer class='acropx-footer' style='background: linear-gradient(135deg, #1f1f1f 0%, #2d2d2d 100%); color: #e8eaed; padding: 40px 24px 24px; text-align: center; margin-top: 40px;'>
-      <div style='max-width: 1200px; margin: 0 auto;'>
-        <!-- Developer Logo/Branding -->
-        <div style='margin-bottom: 24px;'>
-          <span style='font-family: Google Sans, Roboto, sans-serif; font-size: 28px; font-weight: 700; color: #01875f;'>ACropx</span>
-          <span style='display: block; font-size: 14px; color: #9aa0a6; margin-top: 4px;'>Android App Developer</span>
+    <footer class='acropx-footer'>
+      <div class='acropx-footer__inner'>
+        <div class='acropx-footer__brand'>
+          <span class='acropx-logo'>ACropx</span>
+          <span class='acropx-tagline'>Android App Developer</span>
         </div>
-        
-        <!-- Description -->
-        <p style='font-size: 14px; color: #9aa0a6; max-width: 500px; margin: 0 auto 24px; line-height: 1.6;'>
+        <p class='acropx-footer__description'>
           Crafting quality Android applications with passion. Download our apps from Google Play Store and explore a world of useful tools and entertainment.
         </p>
-        
-        <!-- Social/CTA Links - Customize these URLs in Blogger Layout -->
-        <div style='margin-bottom: 24px;'>
-          <a expr:href='data:blog.homepageUrl' style='display: inline-block; background: #01875f; color: #fff; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; margin: 4px;' title='View all apps'>📱 View All Apps</a>
-          <a expr:href='&quot;mailto:contact@&quot; + data:blog.title.escaped + &quot;.com&quot;' style='display: inline-block; background: transparent; color: #01875f; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; border: 1px solid #01875f; margin: 4px;' title='Contact developer'>📧 Contact Developer</a>
+        <div class='acropx-footer__actions'>
+          <a class='acropx-button primary' expr:href='data:blog.homepageUrl' title='View all apps'>📱 View All Apps</a>
+          <a class='acropx-button ghost' expr:href='&quot;mailto:contact@&quot; + data:blog.title.escaped + &quot;.com&quot;' title='Contact developer'>📧 Contact Developer</a>
         </div>
-        
-        <!-- Divider -->
-        <div style='border-top: 1px solid #3c4043; margin: 24px 0; max-width: 400px; margin-left: auto; margin-right: auto;'/>
-        
-        <!-- Copyright -->
-        <div style='font-size: 12px; color: #80868b;'>
-          <p style='margin: 0 0 8px;'>© 2024 ACropx. All Rights Reserved.</p>
-          <p style='margin: 0;'>
-            <!-- Note: Add your policy page URLs in Blogger Pages section -->
-            <a expr:href='data:blog.homepageUrl + &quot;p/privacy-policy.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Privacy Policy'>Privacy Policy</a> |
-            <a expr:href='data:blog.homepageUrl + &quot;p/terms-of-service.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Terms of Service'>Terms of Service</a> |
-            <a expr:href='data:blog.homepageUrl + &quot;p/about.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='About'>About</a>
-          </p>
+        <div class='acropx-footer__divider'></div>
+        <div class='acropx-footer__meta'>
+          <p class='acropx-footer__copy'>© 2024 ACropx. All Rights Reserved.</p>
+          <div class='acropx-footer__links'>
+            <a expr:href='data:blog.homepageUrl + &quot;p/privacy-policy.html&quot;' title='Privacy Policy'>Privacy Policy</a>
+            <a expr:href='data:blog.homepageUrl + &quot;p/terms-of-service.html&quot;' title='Terms of Service'>Terms of Service</a>
+            <a expr:href='data:blog.homepageUrl + &quot;p/about.html&quot;' title='About'>About</a>
+          </div>
         </div>
       </div>
     </footer>
