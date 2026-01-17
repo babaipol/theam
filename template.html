@@ -2574,7 +2574,7 @@ margin-left:40px
    ============================================ */
 
 /* Developer Branding Header */
-.acropx-header {
+.acropx-dev-header {
   background: linear-gradient(135deg, #01875f 0%, #00a86b 100%);
   padding: 8px 16px;
   text-align: center;
@@ -2584,7 +2584,7 @@ margin-left:40px
   letter-spacing: 0.5px;
 }
 
-.acropx-header .developer-name {
+.acropx-dev-header .developer-name {
   font-weight: 700;
   color: #fff;
 }
@@ -4802,10 +4802,10 @@ margin-left:40px
           Crafting quality Android applications with passion. Download our apps from Google Play Store and explore a world of useful tools and entertainment.
         </p>
         
-        <!-- Social/CTA Links -->
+        <!-- Social/CTA Links - Customize these URLs in Blogger Layout -->
         <div style='margin-bottom: 24px;'>
-          <a href='#' style='display: inline-block; background: #01875f; color: #fff; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; margin: 4px;'>📱 View on Play Store</a>
-          <a href='#' style='display: inline-block; background: transparent; color: #01875f; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; border: 1px solid #01875f; margin: 4px;'>📧 Contact Developer</a>
+          <a expr:href='data:blog.homepageUrl' style='display: inline-block; background: #01875f; color: #fff; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; margin: 4px;' title='View all apps'>📱 View All Apps</a>
+          <a expr:href='&quot;mailto:contact@&quot; + data:blog.title.escaped + &quot;.com&quot;' style='display: inline-block; background: transparent; color: #01875f; padding: 10px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; text-decoration: none; border: 1px solid #01875f; margin: 4px;' title='Contact developer'>📧 Contact Developer</a>
         </div>
         
         <!-- Divider -->
@@ -4815,9 +4815,10 @@ margin-left:40px
         <div style='font-size: 12px; color: #80868b;'>
           <p style='margin: 0 0 8px;'>© 2024 ACropx. All Rights Reserved.</p>
           <p style='margin: 0;'>
-            <a href='#' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;'>Privacy Policy</a> |
-            <a href='#' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;'>Terms of Service</a> |
-            <a href='#' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;'>About</a>
+            <!-- Note: Add your policy page URLs in Blogger Pages section -->
+            <a expr:href='data:blog.homepageUrl + &quot;p/privacy-policy.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Privacy Policy'>Privacy Policy</a> |
+            <a expr:href='data:blog.homepageUrl + &quot;p/terms-of-service.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='Terms of Service'>Terms of Service</a> |
+            <a expr:href='data:blog.homepageUrl + &quot;p/about.html&quot;' style='color: #9aa0a6; text-decoration: none; margin: 0 8px;' title='About'>About</a>
           </p>
         </div>
       </div>
